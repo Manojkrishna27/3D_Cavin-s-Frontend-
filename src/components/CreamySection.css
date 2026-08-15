@@ -131,3 +131,22 @@
     padding: 48px 24px 64px;
   }
 }
+
+@media (max-width: 480px) {
+  .creamy-section__image-col {
+    min-height: 65vw;
+  }
+
+  .creamy-section__text-col {
+    padding: 36px 20px 52px;
+    gap: 20px;
+  }
+
+  .creamy-section__copy {
+    max-width: 100%;
+  }
+
+  .creamy-section__attributes {
+    gap: 12px;
+  }
+}

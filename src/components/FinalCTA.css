@@ -145,3 +145,13 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 360px) {
+  .final-cta__inner {
+    padding: 64px 16px;
+  }
+
+  .final-cta__product {
+    max-width: 260px;
+  }
+}

@@ -117,8 +117,8 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  /* Tall image area — same for all cards */
-  height: clamp(280px, 30vw, 400px);
+  width: 100%;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
@@ -256,12 +256,18 @@
     gap: 12px;
   }
 
-  .fc-card__img-wrap {
-    height: clamp(180px, 40vw, 280px);
-  }
 
   .fc-card__desc {
     display: none;
+  }
+
+  .fc-card__body {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .fc-card__name {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
   }
 
   .fc-card__cta-wrap {
@@ -271,12 +277,25 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .flavour-collection {
     padding: 60px 16px;
   }
 
+  .flavour-collection__header {
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 400px) {
   .flavour-collection__grid {
     grid-template-columns: 1fr;
+  }
+
+
+  .fc-card__desc {
+    display: block;
+    font-size: 0.78rem;
   }
 }

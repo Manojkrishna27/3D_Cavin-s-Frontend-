@@ -12,7 +12,7 @@
 
 .footer__top {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: minmax(220px, 280px) 1fr;
   gap: clamp(40px, 6vw, 80px);
   padding-bottom: 60px;
 }
@@ -121,14 +121,34 @@
 }
 
 @media (max-width: 600px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .footer__nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+  }
+
+  .footer__logo {
+    font-size: 2rem;
   }
 
   .footer__bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .footer__nav-link {
+    font-size: 0.82rem;
   }
 }

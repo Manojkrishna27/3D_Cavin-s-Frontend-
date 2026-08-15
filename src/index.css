@@ -176,6 +176,9 @@ html.lenis body {
   transition: all 0.4s var(--ease-smooth);
   position: relative;
   overflow: hidden;
+  /* Prevent overflow on small screens */
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .btn-primary::before {
@@ -217,6 +220,9 @@ html.lenis body {
   transition: all 0.4s var(--ease-smooth);
   position: relative;
   overflow: hidden;
+  /* Prevent overflow on small screens */
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .btn-gold::before {
@@ -418,5 +424,34 @@ html.lenis body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Global mobile button resets ──────────────────── */
+@media (max-width: 480px) {
+  .btn-primary,
+  .btn-gold {
+    padding: 14px 24px;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    gap: 10px;
+  }
+
+  .loading-progress-wrap {
+    width: 80vw;
+    max-width: 300px;
+  }
+
+  .loading-logo {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+}
+
+@media (max-width: 360px) {
+  .btn-primary,
+  .btn-gold {
+    padding: 12px 18px;
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
   }
 }

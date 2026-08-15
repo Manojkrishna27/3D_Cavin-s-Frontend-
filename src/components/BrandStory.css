@@ -138,14 +138,26 @@
   .brand-story__year-bg {
     font-size: 8rem;
   }
+
+  .brand-story__body {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .brand-story {
-    padding: 64px 24px;
+    padding: 64px 20px;
   }
 
   .brand-story__images-col {
-    height: 280px;
+    height: 260px;
+  }
+
+  .brand-story__text-col {
+    gap: 20px;
+  }
+
+  .brand-story__year-bg {
+    font-size: 6rem;
   }
 }

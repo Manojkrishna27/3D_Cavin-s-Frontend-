@@ -137,10 +137,22 @@
   .chocolate-section__img-float-wrap {
     width: 40%;
   }
+
+  .chocolate-section__text-block {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .chocolate-section__visuals {
     height: 240px;
+  }
+
+  .chocolate-section__inner {
+    padding: 52px 20px;
+  }
+
+  .chocolate-section__content {
+    gap: 24px;
   }
 }

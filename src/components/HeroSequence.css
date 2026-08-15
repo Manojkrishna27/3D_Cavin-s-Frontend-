@@ -227,6 +227,15 @@
     padding-bottom: 72px;
   }
 
+  .hero__content {
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .hero__sub {
+    max-width: 100%;
+  }
+
   .hero__scroll-indicator,
   .hero__frame-counter {
     right: 16px;
@@ -244,6 +253,19 @@
 }
 
 @media (max-width: 480px) {
+  .hero__overlay {
+    padding: 20px 16px;
+    padding-bottom: 64px;
+  }
+
+  .hero__content {
+    gap: 16px;
+  }
+
+  .hero__headline {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+  }
+
   .hero__scroll-arrow-wrap {
     display: none;
   }

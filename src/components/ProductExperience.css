@@ -96,6 +96,10 @@
   .product-experience__image-wrap {
     aspect-ratio: 16 / 9;
   }
+
+  .product-experience__copy {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -106,5 +110,19 @@
   .product-experience__stats {
     gap: 24px;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-experience {
+    padding: 52px 16px;
+  }
+
+  .product-experience__stats {
+    gap: 16px;
+  }
+
+  .product-experience__stat-num {
+    font-size: 1.3rem;
   }
 }
