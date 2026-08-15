@@ -44,12 +44,24 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="footer__bottom">
-          <p className="footer__copy body-md">
-            &copy; {year} Cavin&apos;s. All rights reserved. Crafted with love in Chennai, India.
-          </p>
-          <p className="footer__credits body-md">
-            A Hatsun Agro Product Group Brand.
-          </p>
+          <div className="footer__bottom-left">
+            <p className="footer__copy body-md">
+              &copy; {year} Cavin&apos;s Concept Page. Designed & Developed by{' '}
+              <a href="https://github.com/Manojkrishna27" target="_blank" rel="noopener noreferrer" className="footer__author-link">Manojkrishna</a>.
+            </p>
+            <p className="footer__disclaimer body-md">
+              Unofficial student concept project. Not affiliated with Cavin&apos;s or Hatsun Agro.
+            </p>
+          </div>
+          <div className="footer__socials body-md">
+            <a href="https://github.com/Manojkrishna27" target="_blank" rel="noopener noreferrer" className="footer__social-link">
+              GitHub
+            </a>
+            <span className="footer__social-sep" aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/manoj-krishna-m/" target="_blank" rel="noopener noreferrer" className="footer__social-link">
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </footer>
