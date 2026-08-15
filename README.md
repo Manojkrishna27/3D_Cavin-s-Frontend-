@@ -132,9 +132,15 @@ This project is deployed on **Vercel**.
 
 ---
 
+## ⚠️ Disclaimer
+
+> **Unofficial personal concept.** This website is a student-created design/technology project and is not affiliated with, sponsored by, authorized by, or endorsed by Cavin's or CavinKare. All Cavin's trademarks, product names, packaging, and related brand assets belong to their respective owner(s).
+
+---
+
 ## 📜 License
 
-This project is for portfolio/demo purposes. All product imagery and branding belongs to **Cavin's** (Hatsun Agro Product Ltd).
+This project is for **portfolio and educational purposes only**. No copyright infringement is intended.
 
 ---
 
