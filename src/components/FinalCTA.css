@@ -1,0 +1,147 @@
+.final-cta {
+  background: var(--chocolate-deep);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background */
+.final-cta__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.final-cta__bg-inner {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+.final-cta__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: saturate(0.5) brightness(0.25);
+}
+
+.final-cta__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(74, 36, 24, 0.6) 0%, transparent 70%),
+    linear-gradient(to right, rgba(26, 14, 7, 0.95) 0%, rgba(26, 14, 7, 0.7) 50%, rgba(26, 14, 7, 0.85) 100%);
+}
+
+.final-cta__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: clamp(80px, 12vw, 140px) clamp(24px, 6vw, 100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+
+.final-cta__content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.final-cta__eyebrow {
+  color: var(--gold-accent);
+  letter-spacing: 0.3em;
+}
+
+.final-cta__headline {
+  color: var(--cream-white);
+  line-height: 0.92;
+}
+
+.final-cta__sub {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.final-cta__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.final-cta__cta {
+  text-decoration: none;
+}
+
+.final-cta__cta-secondary {
+  text-decoration: none;
+}
+
+/* Floating product */
+.final-cta__product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.final-cta__product-img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.6));
+}
+
+@media (max-width: 900px) {
+  .final-cta__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .final-cta__content {
+    align-items: center;
+  }
+
+  .final-cta__product {
+    order: -1;
+    width: 80%;
+    max-width: 360px;
+  }
+
+  .final-cta__actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-cta__product {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .final-cta__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .final-cta__cta,
+  .final-cta__cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

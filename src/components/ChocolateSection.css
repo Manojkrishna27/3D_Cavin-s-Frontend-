@@ -1,0 +1,146 @@
+.chocolate-section {
+  position: relative;
+  min-height: 100vh;
+  background: var(--chocolate-rich);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Full-bleed background image with parallax */
+.chocolate-section__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.chocolate-section__bg-img-wrap {
+  position: absolute;
+  inset: -15%;
+  will-change: transform;
+}
+
+.chocolate-section__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: saturate(0.6) brightness(0.5);
+}
+
+.chocolate-section__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(26, 14, 7, 0.92) 0%, rgba(26, 14, 7, 0.65) 50%, rgba(26, 14, 7, 0.2) 100%),
+    linear-gradient(to bottom, rgba(26, 14, 7, 0.5) 0%, transparent 40%, rgba(26, 14, 7, 0.5) 100%);
+}
+
+.chocolate-section__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  padding: clamp(80px, 12vw, 160px) clamp(24px, 6vw, 100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 80px);
+  align-items: center;
+}
+
+.chocolate-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.chocolate-section__eyebrow {
+  color: var(--gold-accent);
+  letter-spacing: 0.3em;
+}
+
+.chocolate-section__headline-clip {
+  overflow: hidden;
+}
+
+.chocolate-section__headline {
+  color: var(--cream-white);
+  line-height: 0.92;
+}
+
+.chocolate-section__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.chocolate-section__copy {
+  color: var(--text-secondary);
+}
+
+/* Visuals column */
+.chocolate-section__visuals {
+  position: relative;
+  height: 520px;
+}
+
+.chocolate-section__img-secondary-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 10%;
+  bottom: 20%;
+  overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
+}
+
+.chocolate-section__img-secondary {
+  width: 100%;
+  height: 115%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.chocolate-section__img-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 48%;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(245, 237, 228, 0.08);
+}
+
+.chocolate-section__img-float {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .chocolate-section__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 64px 24px;
+  }
+
+  .chocolate-section__visuals {
+    height: 320px;
+  }
+
+  .chocolate-section__img-float-wrap {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .chocolate-section__visuals {
+    height: 240px;
+  }
+}
